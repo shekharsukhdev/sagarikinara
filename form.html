@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <style>
+      *{
+    box-sizing: border-box;
+    color: #03045e;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding: 8px;
+}
+.container{
+    background-color: #48cae4;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+fieldset{
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.main_heading{
+    text-align: center;
+}
+input[type="button"]{
+    background-color: #4daea1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+
+}
+input[type="button"]:hover{
+    background-color: #4caf84;
+
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="" method="get">
+        <h1 class="main_heading">Payment form</h1>
+        <hr>
+        <h2><b>User information</b></h2>
+
+        <p>Name:*<input type="text" name="name" required /></p>
+
+        <fieldset>
+          <legend>Gender</legend>
+          <p>
+            male:*<input type="radio" name="gender" id="gender" required />
+            female: <input type="radio" name="gender" id="gender" required />
+          </p>
+        </fieldset>
+
+        <p>
+          Adress:
+          <textarea name="adress" id="address" cols="100" rows="6"></textarea>
+        </p>
+
+        <p>Email:* <input type="email" name="email" id="email" required /></p>
+
+        <p>
+          Pincode:* <input type="number" name="pincode" id="pincode" required />
+        </p>
+        <h2><b>payment information</b></h2>
+        <p>
+          Card type:*
+          <select name="card_type" id="card_type" required>
+            <option value="">__select card type__</option>
+            <option value="master">mastercard</option>
+            <option value="rupay">rupey card</option>
+            <option value="visa">visa card</option>
+            <option value="maestro">maestrocard</option>
+          </select>
+        </p>
+
+        <p>
+          Card number:*
+          <input type="number" name="card number" id="card number" required />
+        </p>
+
+        <p>
+          Card expiration:*
+          <input
+            type="date"
+            name="card expiration"
+            id="card expiration"
+            required
+          />
+        </p>
+
+        <p>Cvv:* <input type="password" name="cvv" id="cvv" required /></p>
+        <input type="button" value="pay now" />
+        <a href="sagarikinara.html"></a>
+      </form>
+    </div>
+  </body>
+</html>
